@@ -61,7 +61,7 @@ If you set the number of samples (i.e., graphs) from class 1 to 12, from class 2
 
 ![SM-netFusion-PY pipeline](https://github.com/basiralab/SM-netFusion-PY/blob/master/Outputs.png)
 
-# YouTube videos to install and run the code and understand how SM-netFusion works
+# YouTube videos on SM-netFusion
 
 To install and run SM-netFusion, check the following YouTube video:
 
@@ -69,7 +69,7 @@ https://www.youtube.com/watch?v=-dDn8CT4mH0
 
 To learn about how SM-netFusion works, check the following YouTube video:
 
-Short version (10mn): https://www.youtube.com/watch?v=eWz65SyR-eM
+https://www.youtube.com/watch?v=eWz65SyR-eM
 
 
 # Acknowledgement
