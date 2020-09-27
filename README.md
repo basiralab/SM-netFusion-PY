@@ -1,6 +1,11 @@
 # SM-netFusion (Supervised multi-topology network cross-diffusion) in Python
 SM-netFusion (Supervised multi-topology network cross-diffusion) for a fast and accurate graph data classification code, recoded by Birkan Ak. Please contact ak16@itu.edu.tr for inquiries. Thanks.
 
+```
+You can download the Matlab version of SM-netFusion at: https://github.com/basiralab/SM-netFusion
+
+```
+
 Although limited, existing brain network atlases (BNA) rely on a similarity network diffusion and fusion technique, which only considers node degree as a topological measure in the cross-network diffusion process, thereby overlooking rich topological measures of the brain network (e.g., centrality). Moreover, both diffusion and fusion techniques are implemented in fully unsupervised manner, which might decrease the discriminative power of the estimated BNAs. To address these issues, we design a simple but effective  a supervised multi-topology network cross-diffusion (SM-netFusion) framework for learning a BNA which satisfies the following constraints:(i) it is well-representative that consistently captures the unique and distinctive traits of a population of functional networks, (ii) it is well-centered that occupies a center position optimally near to all individuals, and (iii) it reliably identifies the most discriminative disordered brain connections by comparing templates estimated using disordered and healthy brains, respectively.
 
 
