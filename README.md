@@ -11,7 +11,7 @@ This work will be published in **MICCAI 2020 LNCS Springer Proceedings** (https:
 
 **Supervised multi-topology network cross-diffusion (SM-netFusion)** presents the first work for supervised network cross-diffusion based on graph topological measures (SM-netFusion) by enhancing the non-linear fusion process using a weighted mixture of multi-topological measures.  Our learning-based framework comprises three key steps. (1) Class-speciﬁc feature extraction and clustering, (2) Class-speciﬁc supervised multi-topology network cross-diffusion, (3) Identification of the discriminative connectional fingerprint. Experimental results and comparisons with the state-of-the-art methods demonstrate that SM-netFusion can achieve the best results in terms of centerdness, representativness and discriminativness and further boosted classification accuracy. We evaluated our proposed framework from ABIDE preprocessed dataset (http://preprocessed-connectomes-project.org/abide/).
 
-![SM-netFusion pipeline](https://github.com/basiralab/SM-netFusion/blob/master/pipeline.png)
+![SM-netFusion-PY pipeline](https://github.com/basiralab/SM-netFusion/blob/master/pipeline.png)
 
 # Libraries to pre-install in Python
 
