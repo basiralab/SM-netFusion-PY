@@ -11,7 +11,7 @@ This work will be published in **MICCAI 2020 LNCS Springer Proceedings** (https:
 
 **Supervised multi-topology network cross-diffusion (SM-netFusion)** presents the first work for supervised network cross-diffusion based on graph topological measures (SM-netFusion) by enhancing the non-linear fusion process using a weighted mixture of multi-topological measures.  Our learning-based framework comprises three key steps. (1) Class-speciﬁc feature extraction and clustering, (2) Class-speciﬁc supervised multi-topology network cross-diffusion, (3) Identification of the discriminative connectional fingerprint. Experimental results and comparisons with the state-of-the-art methods demonstrate that SM-netFusion can achieve the best results in terms of centerdness, representativness and discriminativness and further boosted classification accuracy. We evaluated our proposed framework from ABIDE preprocessed dataset (http://preprocessed-connectomes-project.org/abide/).
 
-![SM-netFusion pipeline](http://basira-lab.com/SM_netFusion/pipeline.png)
+![SM-netFusion pipeline](https://github.com/basiralab/SM-netFusion/blob/master/pipeline.png)
 
 # Libraries to pre-install in Python
 
@@ -26,7 +26,7 @@ Circular graph from https://github.com/ericmjl/nxviz
 # Demo
 The code has been tested with PyCharm (Python 3.6) on Windows 10. GPU is not needed to run the code.
 In this repository, we release the SM-netFusion source code trained and tested on a simulated heterogeneous graph data from 2 Gaussian distributions as shown below:
-![SM-netFusion-PY pipeline](http://basira-lab.com/Distribution/) 
+![SM-netFusion-PY pipeline](https://github.com/basiralab/SM-netFusion/blob/master/) 
 
 **Data preparation**
 We simulated random graph dataset from two Gaussian distributions using the function simulateData.m. The number of graphs in class 1, the number graphs in class 2, and the number of nodes (must be >20) are manually inputted by the user when starting the demo.
@@ -55,11 +55,11 @@ To try our code, you can use: SM-netFusion_demo.m
 # Example Results
 In order to view the results in a graph manner, make sure to set the displayResults variable in the SM_netFusion_demo to 1. When it is set to 1 with the given inputs, below is one of the graphs.
 
-![SM-netFusion-PY pipeline](https://github.com/basiralab/SM-netFusion_PY/grpahs)
+![SM-netFusion-PY pipeline](https://github.com/basiralab/SM-netFusion/blob/master/graphs.png)
 
 If you set the number of samples (i.e., graphs) from class 1 to 12, from class 2 to 13, and the size of each graph to 50 (nodes), you will get the following outputs when running the demo with default parameter setting:
 
-![SM-netFusion-PY pipeline](https://github.com/basiralab/SM-netFusion_PY/Outputs.png)
+![SM-netFusion-PY pipeline](https://github.com/basiralab/SM-netFusion/blob/master/Outputs.png)
 
 
 # Acknowledgement
