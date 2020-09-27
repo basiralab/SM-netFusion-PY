@@ -70,25 +70,32 @@ These packages need to be installed in Python since this work uses these codes:
 
 • SNF from https://github.com/rmarkello/snfpy
 
+
 # Related references
+
+Easymkl: a scalable multiple kernel learning algorithm: Aiolli, F., Donini, M. Neurocomputing169(2015) 215–224. [https://www.sciencedirect.com/science/article/abs/pii/S0925231215003653]
 
 Similarity Network Fusion (SNF): Wang, B., Mezlini, A.M., Demir, F., Fiume, M., Tu, Z., Brudno, M., HaibeKains, B., Goldenberg, A., 2014. Similarity network fusion for aggregating data types on a genomic scale. [http://www.cogsci.ucsd.edu/media/publications/nmeth.2810.pdf] (2014) [https://github.com/maxconway/SNFtool].
 
-Single‐cell Interpretation via Multi‐kernel Learning (SIMLR): Wang, B., Ramazzotti, D., De Sano, L., Zhu, J., Pierson, E., Batzoglou, S.: SIMLR: a tool for large-scale single-cell analysis by multi-kernel learning. [https://www.biorxiv.org/content/10.1101/052225v3] (2017) [https://github.com/bowang87/SIMLR_PY].
+Single‐cell Interpretation via Multi‐kernel LeaRning (SIMLR): Wang, B., Ramazzotti, D., De Sano, L., Zhu, J., Pierson, E., Batzoglou, S.: SIMLR: a tool for large-scale single-cell analysis by multi-kernel learning. [https://www.biorxiv.org/content/10.1101/052225v3] (2017) [https://github.com/bowang87/SIMLR_PY].
 
+Paul Kassebaum (2019). circularGraph (https://www.github.com/paul-kassebaum-mathworks/circularGraph), GitHub. Retrieved December 26, 2019
 
 # Please cite the following paper when using SM-netFusion:
 
-
-Paper link on ResearchGate:
+@article{mhiriMICCAI2020,
+  title={Supervised Multi-topology Network Cross-diffusion for Population-driven Brain Network Atlas Estimation},<br/>
+  author={Mhiri, Islem, Ben Khelifa, Anouar, Mahjoub, Mohamed Ali and Rekik, Islem},<br/>
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},<br/>
+  pages={},<br/>
+  year={2020},<br/>
+  organization={Springer}<br/>
+}<br/>
 
 # License
 Our code is released under MIT License (see LICENSE file for details).
 
 # Contributing
-We always welcome contributions to help improve SM-netFusion and evaluate our framework on other types of graph data. If you would like to contribute, please contact islemmhiri1993@gmail.com or ak16@itu.edu.tr. Many thanks.
-
-
-
+We always welcome contributions to help improve NAG-FS and evaluate our framework on other types of graph data. If you would like to contribute, please contact islemmhiri1993@gmail.com. Many thanks.
 
 
