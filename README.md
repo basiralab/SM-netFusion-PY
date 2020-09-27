@@ -11,7 +11,7 @@ This work will be published in **MICCAI 2020 LNCS Springer Proceedings** (https:
 
 **Supervised multi-topology network cross-diffusion (SM-netFusion)** presents the first work for supervised network cross-diffusion based on graph topological measures (SM-netFusion) by enhancing the non-linear fusion process using a weighted mixture of multi-topological measures.  Our learning-based framework comprises three key steps. (1) Class-speciﬁc feature extraction and clustering, (2) Class-speciﬁc supervised multi-topology network cross-diffusion, (3) Identification of the discriminative connectional fingerprint. Experimental results and comparisons with the state-of-the-art methods demonstrate that SM-netFusion can achieve the best results in terms of centerdness, representativness and discriminativness and further boosted classification accuracy. We evaluated our proposed framework from ABIDE preprocessed dataset (http://preprocessed-connectomes-project.org/abide/).
 
-![SM-netFusion pipeline](http://basira-lab.com/SM_netFusion/pipeline)
+![SM-netFusion pipeline](http://basira-lab.com/SM_netFusion/pipeline.PNG)
 
 # Libraries to pre-install in Python
 
@@ -58,7 +58,7 @@ In order to view the results in a graph manner, make sure to set the displayResu
 
 If you set the number of samples (i.e., graphs) from class 1 to 12, from class 2 to 13, and the size of each graph to 50 (nodes), you will get the following outputs when running the demo with default parameter setting:
 
-![SM-netFusion_graph](https://github.com/basiralab/SM-netFusion_PY/Outputs)
+![SM-netFusion_graph](https://github.com/basiralab/SM-netFusion_PY/Outputs.PNG)
 
 
 # Acknowledgement
@@ -85,7 +85,7 @@ Paper link on ResearchGate:
 Our code is released under MIT License (see LICENSE file for details).
 
 # Contributing
-We always welcome contributions to help improve SM-netFusion and evaluate our framework on other types of graph data. If you would like to contribute, please contact islemmhiri1993@gmail.com. Many thanks.
+We always welcome contributions to help improve SM-netFusion and evaluate our framework on other types of graph data. If you would like to contribute, please contact islemmhiri1993@gmail.com or ak16@itu.edu.tr. Many thanks.
 
 
 
