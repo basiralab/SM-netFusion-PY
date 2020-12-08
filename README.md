@@ -107,6 +107,8 @@ Paul Kassebaum (2019). circularGraph (https://www.github.com/paul-kassebaum-math
   organization={Springer}<br/>
 }<br/>
 
+The paper is available on arXiv at: https://arxiv.org/abs/2009.11054
+
 # License
 Our code is released under MIT License (see LICENSE file for details).
 
