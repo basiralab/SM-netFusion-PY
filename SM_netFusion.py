@@ -50,8 +50,8 @@
 
 
 import numpy as np
-
-import snf
+import SNF_all
+# import snf
 import SIMLR_PY.SIMLR as SIMLR
 import matplotlib.pyplot as plt
 
@@ -118,8 +118,8 @@ def SM_netFusion(train_data, train_Labels, Nf, displayResults):
     if Ca1.shape[0] > 1:
         for i in range(Ca1.shape[0]):
             class1.append(Ca1[i, :, :])
-        affinity_networks = snf.make_affinity(class1, metric='euclidean', K=20, mu=0.5)
-        AC11 = snf.snf(affinity_networks, K=20)
+        affinity_networks = SNF_all.make_affinity(class1, metric='euclidean', K=20, mu=0.5)
+        AC11 = SNF_all.SNF_all(affinity_networks, K=20)
         class1 = []
     else:
         AC11 = Ca1[0]
@@ -128,8 +128,8 @@ def SM_netFusion(train_data, train_Labels, Nf, displayResults):
     if Ca2.shape[0] > 1:
         for i in range(Ca2.shape[0]):
             class1.append(Ca2[i, :, :])
-        affinity_networks = snf.make_affinity(class1, metric='euclidean', K=20, mu=0.5)
-        AC12 = snf.snf(affinity_networks, K=20)
+        affinity_networks = SNF_all.make_affinity(class1, metric='euclidean', K=20, mu=0.5)
+        AC12 = SNF_all.SNF_all(affinity_networks, K=20)
         class1 = []
     else:
         AC12 = Ca2[0]
@@ -138,8 +138,8 @@ def SM_netFusion(train_data, train_Labels, Nf, displayResults):
         class1 = []
         for i in range(Cn1.shape[0]):
             class1.append(Cn1[i, :, :])
-        affinity_networks = snf.make_affinity(class1, metric='euclidean', K=20, mu=0.5)
-        AC21 = snf.snf(affinity_networks, K=20)  # First local network atlas for C2 group
+        affinity_networks = SNF_all.make_affinity(class1, metric='euclidean', K=20, mu=0.5)
+        AC21 = SNF_all.SNF_all(affinity_networks, K=20)  # First local network atlas for C2 group
         class1 = []
     else:
         AC21 = Cn1[0]
@@ -148,14 +148,14 @@ def SM_netFusion(train_data, train_Labels, Nf, displayResults):
     if Cn2.shape[0] > 1:
         for i in range(Cn2.shape[0]):
             class1.append(Cn2[i, :, :])
-        affinity_networks = snf.make_affinity(class1, metric='euclidean', K=20, mu=0.5)
-        AC22 = snf.snf(affinity_networks, K=20)  # Second local network atlas for C2 group
+        affinity_networks = SNF_all.make_affinity(class1, metric='euclidean', K=20, mu=0.5)
+        AC22 = SNF_all.SNF_all(affinity_networks, K=20)  # Second local network atlas for C2 group
         class1 = []
     else:
         AC22 = Cn2[0]
 
-    AC1 = snf.snf([AC11, AC12], K=20)
-    AC2 = snf.snf([AC21, AC22], K=20)
+    AC1 = SNF_all.SNF_all([AC11, AC12], K=20)
+    AC2 = SNF_all.SNF_all([AC21, AC22], K=20)
 
     # 5 most discriminative connectivities are determined below and being indexed in array
 
