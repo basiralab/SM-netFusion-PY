@@ -1,6 +1,11 @@
 # SM-netFusion (Supervised multi-topology network cross-diffusion) in Python
 SM-netFusion (Supervised multi-topology network cross-diffusion) for a fast and accurate graph data classification code, recoded by Birkan Ak. Please contact ak16@itu.edu.tr for inquiries. Thanks.
 
+```
+You can download the Matlab version of SM-netFusion at: https://github.com/basiralab/SM-netFusion
+
+```
+
 Although limited, existing brain network atlases (BNA) rely on a similarity network diffusion and fusion technique, which only considers node degree as a topological measure in the cross-network diffusion process, thereby overlooking rich topological measures of the brain network (e.g., centrality). Moreover, both diffusion and fusion techniques are implemented in fully unsupervised manner, which might decrease the discriminative power of the estimated BNAs. To address these issues, we design a simple but effective  a supervised multi-topology network cross-diffusion (SM-netFusion) framework for learning a BNA which satisfies the following constraints:(i) it is well-representative that consistently captures the unique and distinctive traits of a population of functional networks, (ii) it is well-centered that occupies a center position optimally near to all individuals, and (iii) it reliably identifies the most discriminative disordered brain connections by comparing templates estimated using disordered and healthy brains, respectively.
 
 
@@ -11,7 +16,7 @@ This work will be published in **MICCAI 2020 LNCS Springer Proceedings** (https:
 
 **Supervised multi-topology network cross-diffusion (SM-netFusion)** presents the first work for supervised network cross-diffusion based on graph topological measures (SM-netFusion) by enhancing the non-linear fusion process using a weighted mixture of multi-topological measures.  Our learning-based framework comprises three key steps. (1) Class-speciﬁc feature extraction and clustering, (2) Class-speciﬁc supervised multi-topology network cross-diffusion, (3) Identification of the discriminative connectional fingerprint. Experimental results and comparisons with the state-of-the-art methods demonstrate that SM-netFusion can achieve the best results in terms of centerdness, representativness and discriminativness and further boosted classification accuracy. We evaluated our proposed framework from ABIDE preprocessed dataset (http://preprocessed-connectomes-project.org/abide/).
 
-![SM-netFusion pipeline](http://basira-lab.com/SM_netFusion/pipeline.png)
+![SM-netFusion-PY pipeline](https://github.com/basiralab/SM-netFusion-PY/blob/master/Pipeline.png)
 
 # Libraries to pre-install in Python
 
@@ -26,7 +31,7 @@ Circular graph from https://github.com/ericmjl/nxviz
 # Demo
 The code has been tested with PyCharm (Python 3.6) on Windows 10. GPU is not needed to run the code.
 In this repository, we release the SM-netFusion source code trained and tested on a simulated heterogeneous graph data from 2 Gaussian distributions as shown below:
-![SM-netFusion-PY pipeline](http://basira-lab.com/Distribution/) 
+![SM-netFusion-PY pipeline](https://github.com/basiralab/SM-netFusion-PY/blob/master/) 
 
 **Data preparation**
 We simulated random graph dataset from two Gaussian distributions using the function simulateData.m. The number of graphs in class 1, the number graphs in class 2, and the number of nodes (must be >20) are manually inputted by the user when starting the demo.
@@ -55,11 +60,21 @@ To try our code, you can use: SM-netFusion_demo.m
 # Example Results
 In order to view the results in a graph manner, make sure to set the displayResults variable in the SM_netFusion_demo to 1. When it is set to 1 with the given inputs, below is one of the graphs.
 
-![SM-netFusion-PY pipeline](https://github.com/basiralab/SM-netFusion_PY/grpahs)
+![SM-netFusion-PY pipeline](https://github.com/basiralab/SM-netFusion-PY/blob/master/graphs.png)
 
 If you set the number of samples (i.e., graphs) from class 1 to 12, from class 2 to 13, and the size of each graph to 50 (nodes), you will get the following outputs when running the demo with default parameter setting:
 
-![SM-netFusion-PY pipeline](https://github.com/basiralab/SM-netFusion_PY/Outputs.png)
+![SM-netFusion-PY pipeline](https://github.com/basiralab/SM-netFusion-PY/blob/master/Outputs.png)
+
+# YouTube videos on SM-netFusion
+
+To install and run SM-netFusion, check the following YouTube video:
+
+https://www.youtube.com/watch?v=-dDn8CT4mH0
+
+To learn about how SM-netFusion works, check the following YouTube video:
+
+https://www.youtube.com/watch?v=eWz65SyR-eM
 
 
 # Acknowledgement
@@ -70,25 +85,34 @@ These packages need to be installed in Python since this work uses these codes:
 
 • SNF from https://github.com/rmarkello/snfpy
 
+
 # Related references
+
+Easymkl: a scalable multiple kernel learning algorithm: Aiolli, F., Donini, M. Neurocomputing169(2015) 215–224. [https://www.sciencedirect.com/science/article/abs/pii/S0925231215003653]
 
 Similarity Network Fusion (SNF): Wang, B., Mezlini, A.M., Demir, F., Fiume, M., Tu, Z., Brudno, M., HaibeKains, B., Goldenberg, A., 2014. Similarity network fusion for aggregating data types on a genomic scale. [http://www.cogsci.ucsd.edu/media/publications/nmeth.2810.pdf] (2014) [https://github.com/maxconway/SNFtool].
 
-Single‐cell Interpretation via Multi‐kernel Learning (SIMLR): Wang, B., Ramazzotti, D., De Sano, L., Zhu, J., Pierson, E., Batzoglou, S.: SIMLR: a tool for large-scale single-cell analysis by multi-kernel learning. [https://www.biorxiv.org/content/10.1101/052225v3] (2017) [https://github.com/bowang87/SIMLR_PY].
+Single‐cell Interpretation via Multi‐kernel LeaRning (SIMLR): Wang, B., Ramazzotti, D., De Sano, L., Zhu, J., Pierson, E., Batzoglou, S.: SIMLR: a tool for large-scale single-cell analysis by multi-kernel learning. [https://www.biorxiv.org/content/10.1101/052225v3] (2017) [https://github.com/bowang87/SIMLR_PY].
 
+Paul Kassebaum (2019). circularGraph (https://www.github.com/paul-kassebaum-mathworks/circularGraph), GitHub. Retrieved December 26, 2019
 
 # Please cite the following paper when using SM-netFusion:
 
+@article{mhiriMICCAI2020,
+  title={Supervised Multi-topology Network Cross-diffusion for Population-driven Brain Network Atlas Estimation},<br/>
+  author={Mhiri, Islem, Ben Khelifa, Anouar, Mahjoub, Mohamed Ali and Rekik, Islem},<br/>
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},<br/>
+  pages={},<br/>
+  year={2020},<br/>
+  organization={Springer}<br/>
+}<br/>
 
-Paper link on ResearchGate:
+The paper is available on arXiv at: https://arxiv.org/abs/2009.11054
 
 # License
 Our code is released under MIT License (see LICENSE file for details).
 
 # Contributing
-We always welcome contributions to help improve SM-netFusion and evaluate our framework on other types of graph data. If you would like to contribute, please contact islemmhiri1993@gmail.com or ak16@itu.edu.tr. Many thanks.
-
-
-
+We always welcome contributions to help improve NAG-FS and evaluate our framework on other types of graph data. If you would like to contribute, please contact islemmhiri1993@gmail.com. Many thanks.
 
 
